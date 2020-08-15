@@ -44,6 +44,7 @@ searchBox.addEventListener("keypress", function(event){
             hiLow.innerHTML = `${Math.round(data.main.temp_min)}°c / ${Math.round(data.main.temp_max)}°c`;
 
         })
+        .catch(error => console.log(error));
 
     }
 
